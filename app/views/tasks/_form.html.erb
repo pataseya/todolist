@@ -1,0 +1,12 @@
+<%= form_for @task, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.text_area :description, placeholder: "What's your task description?", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :deadline, id: "datetimepicker1", placeholder: "When is your task due?", class: "form-control" %>
+  </div>
+  <br><br><br><br><br><br><br><br>
+  <div class="form-group">
+    <%= f.submit :Submit, class: 'btn btn-primary' %>
+  </div>
+<% end %>
